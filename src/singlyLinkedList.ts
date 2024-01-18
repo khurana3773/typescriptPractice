@@ -32,16 +32,13 @@ export function createSinglyLinkedList<T>(inputArr: T[]): LinkedList.Node<T> | n
 export function printLinkedList<T>(headNode: LinkedList.Node<T>): void {
   let iter: LinkedList.Node<T> | undefined | null = headNode;
 
-  while(iter !== null || iter!==undefined) {
+  while(iter !== null && iter !== undefined) {
     console.log(iter!.data);
     iter = iter!.next;
   }    
+  console.log('');
+  console.log('');
+  console.log('');
 }
-
-export function removeDupNode (d: number): void {
-
-
-}
-
 
 
